@@ -1,17 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!-- Tailwind DaisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css"
+      integrity="sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="bg-[#FFF9F4]">
+      <div class="max-w-[1440px] w-11/12 mx-auto">
+        <nav>
+          <div class="navbar">
+            <div class="navbar-start">
+              <a class="text-xl flex items-center gap-3">
+                <img src="./assets/logo-header.png" alt="" />
+                <span class="leading-loose"
+                  >Browse<span class="text-warning">4</span>Pets</span
+                >
+              </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li>
+                  <a class="text-lg hover:bg-green-400 hover:text-white"
+                    >Find a pet</a
+                  >
+                </li>
+                <li>
+                  <a class="text-lg hover:bg-green-400 hover:text-white"
+                    >Breeds</a
+                  >
+                </li>
+                <li>
+                  <a class="text-lg hover:bg-green-400 hover:text-white"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <div class="lg:flex hidden items-center gap-5">
+                <i class="fa-regular fa-bell text-xl"></i>
+                <i class="fa-solid fa-search text-xl"></i>
+                <button class="border-2 border-warning/50 px-4 py-2 rounded-lg">
+                  Login
+                </button>
+                <button class="btn bg-warning px-4 py-1">Register</button>
+              </div>
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                >
+                  <li>
+                    <a class="text-lg hover:bg-green-400 hover:text-white"
+                      >Find a pet</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-lg hover:bg-green-400 hover:text-white"
+                      >Breeds</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-lg hover:bg-green-400 hover:text-white"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-</head>
-<body>
-    
-</body>
+    <hr class="lg:hidden h-[2px] bg-black" />
+
+    <!-- Banner Part Start Here -->
+    <div
+      class="max-w-[1440px] pt-2 lg:pt-6 w-11/12 mx-auto bg-bottom bg-[url(./assets/cat-big.png)] bg-contain bg-no-repeat py-20"
+    >
+      <div class="lg:w-1/2 flex flex-col gap-3 items-start lg:h-[100vh]">
+        <h3 class="lg:text-4xl text-3xl">
+          Pamper Your Pet, <br />
+          Because They Deserve <br />
+          the Best
+        </h3>
+        <p class="tracking-wide leading-relaxed text-gray-800">
+          Discover a world of treats, toys, and essentials handpicked for your
+          furry friends. Shop now and make tails wag with joy!
+        </p>
+        <button class="btn btn-warning px-5 py-0">Find A Pet</button>
+      </div>
+    </div>
+
+    <section class="w-11/12 mx-auto lg:my-10 my-3 max-w-[1440px]">
+      <h3 class="text-2xl font-black">Browse By Categories</h3>
+      <div class="grid grid-cols-2 my-4 lg:grid-cols-6 gap-3">
+        <div
+          class="flex rounded-md py-5 text-center items-center gap-3 bg-[#F9DF8A] flex-col"
+        >
+          <img
+            class="bg-white p-3 rounded-full"
+            src="./assets/dog-cartoon.png"
+            alt=""
+          />
+          <p class="text-xl font-semibold">Dog</p>
+          <p class="text-center">3 items</p>
+        </div>
+        <div
+          class="flex rounded-md py-5 text-center items-center gap-3 bg-[#F9DF8A] flex-col"
+        >
+          <img
+            class="bg-white p-3 rounded-full"
+            src="./assets/fish-cartoon.png"
+            alt=""
+          />
+          <p class="text-xl font-semibold">Cat</p>
+          <p class="text-center">3 items</p>
+        </div>
+        <div
+          class="flex rounded-md py-5 text-center items-center gap-3 bg-[#F9DF8A] flex-col"
+        >
+          <img
+            class="bg-white p-3 rounded-full"
+            src="./assets/cat-cartoon.png"
+            alt=""
+          />
+          <p class="text-xl font-semibold">Cat</p>
+          <p class="text-center">3 items</p>
+        </div>
+        <div
+          class="flex rounded-md py-5 text-center items-center gap-3 bg-[#F9DF8A] flex-col"
+        >
+          <img
+            class="bg-white p-3 rounded-full"
+            src="./assets/bird-cartoon.png"
+            alt=""
+          />
+          <p class="text-xl font-semibold">Fish</p>
+          <p class="text-center">3 items</p>
+        </div>
+        <div
+          class="flex rounded-md py-5 text-center items-center gap-3 bg-[#F9DF8A] flex-col"
+        >
+          <img
+            class="bg-white p-3 rounded-full"
+            src="./assets/mouse-cartoon.png"
+            alt=""
+          />
+          <p class="text-xl font-semibold">Small pet</p>
+          <p class="text-center">3 items</p>
+        </div>
+        <div
+          class="flex rounded-md py-5 text-center items-center gap-3 bg-[#F9DF8A] flex-col"
+        >
+          <img
+            class="bg-white p-3 rounded-full"
+            src="./assets/rabbit-cartoon.png"
+            alt=""
+          />
+          <p class="text-xl font-semibold">Rabbit</p>
+          <p class="text-center">3 items</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-11/12 mx-auto max-w-[1440px] lg:bg-[#FFF9F4]">
+      <div class="lg:py-12">
+        <h3 class="lg:text-2xl font-bold text-xl">Trending Pet Products</h3>
+
+        <div class="flex flex-col lg:flex-row gap-4">
+          <div class="bg-[#F9DF8A] p-4">
+            <div class="border space-y-3">
+              <h3 class="font-semibold text-xl">T-Shirt For Dogs</h3>
+              <p class="md:w-3/4 text-gray-700 font-medium">
+                Discover a world of treats,toys,and essentials handpicked for
+              </p>
+              <button class="bg-white btn">Shop Now</button>
+
+              <div class="flex justify-end">
+                <img src="./assets/cute-pet-small.png" class="" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Part Ends Here -->
+
+    <script src="script.js"></script>
+  </body>
 </html>
